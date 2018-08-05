@@ -1,7 +1,4 @@
-import requests
-import shutil
-import re
-from io import StringIO
+
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
@@ -9,6 +6,10 @@ from pdfminer.pdfpage import PDFPage
 import codecs
 import unidecode
 import os
+import requests
+import shutil
+import re
+from io import StringIO
 
 def download_file(url):
     local_filename = url.split('/')[-1]
